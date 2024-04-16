@@ -1,0 +1,85 @@
+:root {
+  --bs-body-bg: #fff;
+  --bs-tertiary-bg-rgb: ;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--bs-tertiary-bg-rgb);
+}
+
+.wrapper {
+}
+
+.container {
+  max-width: 298px;
+  margin: 0 auto;
+  margin-top: 400px;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.registration_list {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.login {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.email {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.password {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.registration__text {
+  padding-bottom: 20px;
+}
+
+.registration__remember {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3px;
+}
+
+.registration__sign {
+  padding-top: 20px;
+}
+
+.btn-sign {
+  padding: 10px 44px;
+}
+
+.registration__remember--text {
+  padding-left: 5px;
+}
+
+.text-sign-user {
+  padding-bottom: 20px;
+}
