@@ -1,156 +1,127 @@
-:root {
-  --bs-gray-200: #6c757d;
-}
-
+/* Общие стили */
 *,
-*::before,
-*::after {
+*:after,
+*:before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  background-color: #1a1f25;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+  max-width: ;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
 }
-.container__header {
+
+/* Стили для шапки */
+.header-nav {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
   align-items: center;
+  margin-top: 15px;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 10px;
 }
 
 li {
   list-style-type: none;
 }
 
-a:hover {
-  color: #adb5bd;
-}
-
-.user {
-  display: flex;
-}
-
-.sign {
-  padding: 7px 15px;
-  background-color: white;
-  border: 1px solid var(--bs-gray-200);
-  border-radius: 7px;
-  color: #6c757d;
-}
-
-.header__list--regestration {
-  padding-left: 10px;
-}
-
-.sign:hover {
-  background-color: #adb5bd;
-  color: white;
-}
-
-.nav {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.list__link--last {
-  padding-right: 10px;
-}
-
-.list__link--user {
-  padding-left: 30px;
-  padding-right: 70px;
-}
-
-.list__link--one {
-  padding-left: 10px;
-}
+/* Стили для ссылок */
 a {
-  text-decoration: none;
-
-  color: var(--bs-gray-200);
+  color: aliceblue;
 }
 
-.title-content {
-  background-color: #ced4da;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+a:hover {
+  color: chocolate;
 }
 
-.text__list {
-  padding-top: 20px;
-  font-weight: 400;
-  line-height: 1.2;
-  font-size: 1.5rem;
+a:active {
+  color: orangered;
 }
 
-.block {
-  /* display: flex;
-  justify-content: space-between; */
-  /* display: inline-grid; */
-  display: flex;
-  /* grid-template-rows: repeat(3); */
+/* Стили для кнопок */
+.btn-nav {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border-radius: 3px;
+  margin: 5px 0;
+  background: transparent;
+  border: 2px solid #22272d;
+  color: #e6b333;
+}
+
+.btn-nav:hover {
+  color: chocolate;
+}
+
+.btn-nav:active {
+  color: orangered;
+}
+
+/* Стили для разделов */
+.sections {
   margin-top: 40px;
 }
 
-.block__one {
-  border: 1px solid var(--bs-gray-200);
-  /* display: inline-block; */
-  /* display: grid; */
-  /* grid-template-columns: repeat(); */
-  padding: 20px 20px;
-}
-.block__two {
-  border: 1px solid var(--bs-gray-200);
-  /* display: inline-block; */
-  /* display: grid; */
-  padding: 20px 20px;
-}
-
-.block__list {
-  font-size: 20px;
-}
-
-.block__list--text {
-  padding-top: 10px;
-  padding-right: 60px;
-}
-
-.block__list--text-last {
-  padding-top: 50px;
-}
-
-.game-block {
-  border: #6c757d 1px solid;
-  padding: 50px;
-  margin-right: 78px;
-  width: 100%;
-  text-align: center;
-}
-
-.list-game__name {
+.sections_item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-.list-game {
-  border-top: #6c757d 1px solid;
+.item {
+  padding-right: 10px;
+}
+
+.item_link {
+  text-decoration: none;
+}
+
+/* Стили для заголовков */
+.title-text {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.title-text_subtitle {
+  padding-top: 15px;
+}
+
+/* Стили для каталога */
+.catalog-text {
+  text-align: center;
   padding-top: 50px;
-  margin-top: 50px;
 }
 
-.popular-card-games {
+.catalog-list {
   display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.catalog-list_item {
+  border: #e6b333 1px solid;
+  padding: 50px;
+  width: 100%;
+  margin-right: 20px;
+  text-align: center;
 }

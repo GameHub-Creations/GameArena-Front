@@ -1,196 +1,78 @@
-/* :root {
-  --bs-body-bg: #fff;
-  --bs-tertiary-bg-rgb: ;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url(/img/1655820182_2-celes-club-p-parket-svetlii-tekstura-krasivo-2.jpg);
-}
-
-header {
-  background-color: var(--bs-tertiary-bg-rgb);
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 400px;
-  display: flex;
-  align-items: center;
-  background-color: beige;
-  justify-content: center;
-  padding-bottom: 100px;
-  padding-top: 50px;
-}
-
-li {
-  list-style-type: none;
-}
-
-.email {
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 15px 15px;
-  text-align: center;
-}
-
-.password {
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 15px 15px;
-  text-align: center;
-}
-
-.registration__text {
-  padding-bottom: 20px;
-}
-
-.registration__remember {
-  padding-top: 20px;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 3px;
-}
-
-.registration__sign {
-  padding-top: 20px;
-}
-
-.btn-sign {
-  padding: 10px 50px;
-  border-radius: 10px;
-  background-color: burlywood;
-  border: solid 1px;
-}
-
-.btn-sign:hover {
-  color: aquamarine;
-}
-.btn-sign:active {
-  color: rebeccapurple;
-}
-
-.registration__remember--text {
-  padding-left: 5px;
-}
-
-.text-sign-user {
-  padding-bottom: 20px;
-}
-
-.regestration-window {
-  max-width: 940px;
-  padding: 30px;
-  background-color: beige;
-  margin: 0 auto;
-  margin-top: 100px;
-  align-items: center;
-}
-
-.text-user {
-  display: flex;
-  justify-content: center;
-}
-
-.btn-center {
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.btn-regestration {
-  padding: 10px 50px;
-  border-radius: 10px;
-  background-color: burlywood;
-  border: solid 1px;
-} */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+/* Общие стили */
 *,
 *:after,
 *:before {
   box-sizing: border-box;
 }
 
+/* Стили для body и HTML */
 html,
 body {
-  background: #1a1f25;
+  background-color: #1a1f25;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
-.clear {
-  clear: both;
-}
-
+/* Стили для иконок */
 #man-people-user,
 #lock-locker {
   fill: white;
 }
 
+/* Обертка страницы */
 .wrapper {
   width: 300px;
   margin: 12% auto;
+  border: #e6b333 1px solid;
+  padding: 30px;
 }
 
+/* Стили для формы */
 form {
   position: relative;
 }
 
-.clear {
-  clear: both;
+/* Позиционирование header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/* Стили для ссылки регистрации */
+.registr {
+  text-decoration: none;
+  color: #7f8084;
+}
+
+/* Стили для текста "Sign In" */
 .sign-in {
-  float: left;
   color: white;
   font-size: 1.3em;
 }
 
+/* Позиционирование элементов */
 .position {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Стили для кнопки */
 .button {
-  float: right;
   color: #7f8084;
   border: 1px solid #22272d;
   padding: 7px 15px;
   border-radius: 3px;
   font-size: 0.8em;
-  cursor: pointer;
 }
 
 .button:hover {
   color: #d3d3d3;
 }
 
-.lock {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  margin-top: 10px;
-  padding: 7px;
-  left: 5px;
-}
-.lock::after {
-  content: "";
-  width: 1px;
-  height: 30px;
-  position: absolute;
-  background: #22272d;
-  top: 0px;
-  left: 100%;
-}
-
+/* Стили для иконок "lock" и "user" */
+.lock,
 .user {
   position: absolute;
   width: 30px;
@@ -199,6 +81,8 @@ form {
   padding: 7px;
   left: 5px;
 }
+
+.lock::after,
 .user::after {
   content: "";
   width: 1px;
@@ -209,39 +93,35 @@ form {
   left: 100%;
 }
 
+/* Стили для полей ввода */
 input {
   width: 100%;
   padding: 5px;
+  padding-left: 40px;
   height: 40px;
   border-radius: 3px;
   margin: 5px 0;
   outline: none;
+  background: transparent;
+  border: 2px solid #22272d;
+  color: #e6b333;
+}
+
+.btn {
+  padding-left: 10px;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
   border: 1px solid white;
-  box-shadow: none;
 }
 
-.user-input:focus .user {
-  background: white !important;
-}
+/* input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  padding-left: 35px;
+} */
 
-input[type="text"] {
-  background: transparent;
-  border: 2px solid #22272d;
-  padding-left: 45px;
-  color: #e6b333;
-}
-
-input[type="password"] {
-  background: transparent;
-  border: 2px solid #22272d;
-  padding-left: 45px;
-  color: #e6b333;
-}
-
+/* Стили для кнопки отправки формы */
 input[type="submit"] {
   background: #e6b333;
   border: none;
@@ -251,28 +131,25 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.forgot-label {
-  font-size: 0.8em;
-  color: #7f8084;
-  margin-top: 10px;
-  float: right;
-  padding: 3px 0;
-  cursor: pointer;
-}
-
 .radio-check {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
+/* Стили для забытого пароля */
+.remember {
+  color: #7f8084;
+  padding-right: 85px;
+}
+
+/* Стили для чекбокса */
 .check-box {
   width: 20px;
   padding-left: 30px;
 }
 
-.remember {
+/* Стили для текста "Remember me" */
+/* .remember {
   color: #7f8084;
-  padding-right: 20px;
-}
+  padding-right: px;
+} */
